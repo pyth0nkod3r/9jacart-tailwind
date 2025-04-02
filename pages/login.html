@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>9jacart - Your Online Shopping Destination</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="./assets/js/tailwindcss.min.js"></script>
+    <script src="../assets/js/tailwindcss.min.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -36,7 +36,7 @@
           <!-- Logo -->
           <div class="flex items-center">
             <img
-              src="./assets/img/logo.png"
+              src="../assets/img/logo.png"
               alt="9jacart Logo"
               class="h-8 ml-[-2rem]"
             />
@@ -83,7 +83,44 @@
     </header>
 
     <main class="bg-white">
+      <!-- Login Form Section -->
+      <section class="px-6 py-12 text-[#1B2631]">
+        <h1 class="text-5xl font-bold text-[#1E4700] mb-4">Log in</h1>
+        <p class="text-2xl font-medium mb-10">Enter your details below</p>
 
+        <form class="space-y-10">
+          <!-- Name Field -->
+          <div>
+            <input
+              type="text"
+              placeholder="Name"
+              class="w-full border-b border-gray-300 py-4 text-2xl text-gray-500 focus:outline-none focus:border-[#1E4700]"
+            />
+          </div>
+
+          <!-- Password Field -->
+          <div>
+            <input
+              type="password"
+              placeholder="Password"
+              class="w-full border-b border-gray-300 py-4 text-2xl text-gray-500 focus:outline-none focus:border-[#1E4700]"
+            />
+          </div>
+
+          <!-- Log in Button -->
+          <button
+            type="submit"
+            class="w-full bg-[#1E4700] text-white rounded-lg py-4 text-2xl font-semibold mt-12"
+          >
+            Log in
+          </button>
+        </form>
+
+        <!-- Forgot Password Link -->
+        <div class="mt-10 text-center">
+          <a href="#" class="text-2xl text-gray-700">Forgot Password?</a>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
@@ -148,7 +185,11 @@
           <!-- Logo -->
           <div class="mb-6">
             <a href="#" class="flex items-center">
-              <img src="./assets/img/logo.png" alt="9jacart" class="h-8 mr-2" />
+              <img
+                src="../assets/img/logo.png"
+                alt="9jacart"
+                class="h-8 mr-2"
+              />
             </a>
           </div>
 
@@ -211,7 +252,7 @@
           <div class="grid grid-cols-2 gap-4 py-6 relative">
             <div>
               <img
-                src="./assets/img/qr-code.png"
+                src="../assets/img/qr-code.png"
                 alt="QR Code"
                 class="w-30 h-30"
               />
@@ -219,14 +260,14 @@
             <div class="grid grid-rows-2 ml-5 mb-3">
               <a href="#">
                 <img
-                  src="./assets/img/google-play.png"
+                  src="../assets/img/google-play.png"
                   alt="Google Play"
                   class="w-30 h-26 absolute -top-5 left-[15rem] transform -translate-x-1/2"
                 />
               </a>
               <a href="#">
                 <img
-                  src="./assets/img/app-store.png "
+                  src="../assets/img/app-store.png "
                   alt="App Store"
                   class="w-30 h-24 absolute top-2.2 left-[15.5rem] transform -translate-x-1/2"
                 />
