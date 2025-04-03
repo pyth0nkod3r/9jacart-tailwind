@@ -1506,7 +1506,7 @@
       <section
         class="primary-footer bg-[#0D1F2D] text-white px-8 py-10 border-t border-gray-700 lg:px-16"
       >
-        <div class="lg:flex lg:flex-row lg:justify-between lg:gap-8 lg:mb-8">
+        <div class="lg:flex lg:flex-row lg:justify-between lg:gap-8 lg:mb-3">
           <!-- Logo and Subscribe -->
           <div class="mb-10 lg:mb-0 lg:w-1/5">
             <!-- Logo -->
@@ -1573,32 +1573,34 @@
           </div>
 
           <!-- Download App -->
-          <div class="mb-10 lg:mb-0 lg:w-1/5">
+          <div class="mb-10 lg:mb-0 lg:w-1/5 lg:mr-20">
             <h3 class="text-xl font-bold mb-4">Download App</h3>
             <p class="text-lg mb-4">Save $3 with App New User Only</p>
-            <div class="grid grid-cols-2 gap-4 py-6 relative lg:grid-cols-1">
-              <div class="lg:mb-4">
+            <div
+              class="grid grid-cols-2 gap-2 py-2 relative lg:flex lg:flex-row"
+            >
+              <div class="lg:mb-1 lg:justify-start overflow-hidden">
                 <img
                   src="./assets/img/qr-code.png"
                   alt="QR Code"
-                  class="w-30 h-30"
+                  class="w-30 h-30 lg:size-4/5"
                 />
               </div>
               <div
-                class="grid grid-rows-2 ml-5 mb-3 lg:flex lg:flex-col lg:space-y-2 lg:ml-0"
+                class="grid grid-rows-2 ml-5 mb-3 lg:flex lg:flex-col lg:space-y-2 lg:ml-7 lg:justify-end"
               >
-                <a href="#" class="lg:w-full">
+                <a href="#" class="lg:mb-2">
                   <img
                     src="./assets/img/google-play.png"
                     alt="Google Play"
-                    class="w-30 h-26 absolute -top-5 left-[15rem] transform -translate-x-1/2 lg:static lg:transform-none"
+                    class="w-30 h-26 absolute -top-5 left-[15rem] transform -translate-x-1/2 lg:transform-none lg:size-3/4 lg:left-[12rem]"
                   />
                 </a>
-                <a href="#" class="lg:w-full">
+                <a href="#">
                   <img
-                    src="./assets/img/app-store.png "
+                    src="./assets/img/app-store.png"
                     alt="App Store"
-                    class="w-30 h-24 absolute top-2.2 left-[15.5rem] transform -translate-x-1/2 lg:static lg:transform-none"
+                    class="w-30 h-24 absolute top-2.2 left-[15.5rem] transform -translate-x-1/2 lg:transform-none lg:left-[11.5rem] lg:top-7 lg:size-3/5"
                   />
                 </a>
               </div>
@@ -1607,7 +1609,7 @@
         </div>
 
         <!-- Social Media -->
-        <div class="flex space-x-6 lg:justify-end lg:mb-8">
+        <div class="flex space-x-6 lg:justify-end lg:mb-5 lg:mr-25">
           <a href="#" class="text-white text-xl">
             <i class="fab fa-facebook-f"></i>
           </a>
