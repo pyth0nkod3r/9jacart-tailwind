@@ -862,29 +862,31 @@
       </section>
 
       <!-- Promotional Section -->
-      <section class="px-4 pb-8 bg-black max-h-[85%]">
+      <section class="px-4 pb-8 bg-black lg:px-16 lg:py-16 lg:mx-8">
         <!-- Promo Content -->
-        <div class="relative">
+        <div
+          class="relative lg:flex lg:flex-row lg:items-center lg:justify-between"
+        >
           <!-- Product Image -->
-          <div class="my-0 h-[65%]">
+          <div class="my-0 h-[65%] lg:w-1/2 lg:h-auto lg:order-2">
             <img
               src="./assets/img/jbl music box.png"
               alt="JBL Speaker"
-              class="w-full h-auto object-contain"
+              class="w-full h-auto object-contain lg:max-w-[90%]"
             />
           </div>
 
           <!-- Text Content -->
-          <div class="text-center">
+          <div class="text-center lg:text-left lg:w-1/2 lg:pr-8 lg:order-1">
             <span class="text-[#00FF66] text-lg font-medium mb-4 block"
               >Categories</span
             >
-            <h2 class="text-white text-4xl font-bold mb-8">
+            <h2 class="text-white text-4xl font-bold mb-8 lg:text-5xl">
               Enhance Your<br />Music Experience
             </h2>
 
             <!-- Countdown Timer -->
-            <div class="flex justify-center gap-4 mb-8">
+            <div class="flex justify-center gap-4 mb-8 lg:justify-start">
               <div
                 class="bg-white rounded-full w-16 h-16 flex flex-col items-center justify-center"
               >
@@ -923,18 +925,36 @@
       </section>
 
       <!-- Explore Our Products Section -->
-      <section class="px-4 py-8">
+      <section class="px-4 py-8 lg:px-10 lg:py-12">
         <!-- Heading Group -->
-        <div class="mb-8">
-          <div class="flex items-center gap-4 mb-2">
-            <div class="w-6 h-12 bg-[#1E4700] rounded-lg"></div>
-            <h2 class="text-[#1B2631] text-xl font-semibold">Our Products</h2>
+        <div class="mb-8 lg:flex lg:items-center lg:justify-between">
+          <div>
+            <div class="flex items-center gap-4 mb-2">
+              <div class="w-6 h-12 bg-[#1E4700] rounded-lg"></div>
+              <h2 class="text-[#1B2631] text-xl font-semibold">Our Products</h2>
+            </div>
+            <h3 class="text-[#1B2631] text-xl font-bold">
+              Explore Our Products
+            </h3>
           </div>
-          <h3 class="text-[#1B2631] text-xl font-bold">Explore Our Products</h3>
+
+          <!-- Navigation Arrows - Desktop Only -->
+          <div class="hidden lg:flex lg:items-center lg:gap-2">
+            <button
+              class="w-10 h-10 rounded-full border border-black flex items-center justify-center text-black hover:bg-gray-100"
+            >
+              <i class="fas fa-arrow-left"></i>
+            </button>
+            <button
+              class="w-10 h-10 rounded-full border border-black flex items-center justify-center text-black hover:bg-gray-100"
+            >
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
         </div>
 
         <!-- Product Grid -->
-        <div class="grid grid-cols-2 gap-4">
+        <div class="grid grid-cols-2 gap-4 lg:grid-cols-4 lg:gap-6">
           <!-- Product Card 1 -->
           <article class="rounded-lg p-2 relative">
             <div class="bg-[#F5F5F5]">
