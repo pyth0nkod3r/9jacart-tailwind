@@ -11,7 +11,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
   </head>
-  <body class="bg-[#ffffff] text-white size-full">
+  <body class="bg-[#ffffff] text-white overflow-x-hidden">
     <header class=" ">
       <!-- Announcement Bar -->
       <div
@@ -82,7 +82,7 @@
       </nav>
     </header>
 
-    <main class="bg-white">
+    <main class="bg-white max-w-[100%]">
       <!-- Hero Section -->
       <section class="relative mt-[1rem] lg:flex lg:min-h-[30rem] mx-8">
         <!-- Category Sidebar - Only visible on large screens -->
@@ -401,11 +401,11 @@
               />
             </div>
             <div class="relative">
-              <div class="absolute bottom-[120px] left-2.5 right-0">
+              <div class="absolute bottom-[130px] left-2.5 right-0">
                 <button
-                  class="w-[95%] bg-black text-white py-2 ml-1 text-center"
+                  class="w-full bg-black text-white py-2 -ml-2 text-center"
                 >
-                  <span class="pr-20">Add To Cart</span>
+                  <span class="w-full">Add To Cart</span>
                 </button>
               </div>
               <h4 class="text-[#1B2631] text-xl font-semibold mb-2">
@@ -623,12 +623,12 @@
 
         <!-- Categories Row - Desktop View -->
         <div
-          class="hidden lg:flex lg:flex-nowrap lg:gap-6 lg:overflow-x-auto lg:pb-8 lg:border-b lg:border-gray-200"
+          class="hidden lg:grid lg:grid-cols-6 lg:gap-6 lg:pb-8 lg:border-b lg:border-gray-200"
         >
           <!-- Phone Category -->
           <a
             href="#"
-            class="block min-w-[200px] p-8 bg-white border border-gray-200 rounded-lg hover:border-[#1B2631] transition-colors"
+            class="block p-8 bg-white border border-gray-200 rounded-lg hover:border-[#1B2631] transition-colors"
           >
             <div class="flex flex-col items-center justify-center">
               <i class="fas fa-mobile-alt text-4xl text-[#1B2631] mb-4"></i>
@@ -639,7 +639,7 @@
           <!-- Computers Category -->
           <a
             href="#"
-            class="block min-w-[200px] p-8 bg-white border border-gray-200 rounded-lg hover:border-[#1B2631] transition-colors"
+            class="block p-8 bg-white border border-gray-200 rounded-lg hover:border-[#1B2631] transition-colors"
           >
             <div class="flex flex-col items-center justify-center">
               <i class="fas fa-desktop text-4xl text-[#1B2631] mb-4"></i>
@@ -650,7 +650,7 @@
           <!-- SmartWatch Category -->
           <a
             href="#"
-            class="block min-w-[200px] p-8 bg-white border border-gray-200 rounded-lg hover:border-[#1B2631] transition-colors"
+            class="block p-8 bg-white border border-gray-200 rounded-lg hover:border-[#1B2631] transition-colors"
           >
             <div class="flex flex-col items-center justify-center">
               <i class="fas fa-clock text-4xl text-[#1B2631] mb-4"></i>
@@ -661,7 +661,7 @@
           <!-- Camera Category -->
           <a
             href="#"
-            class="block min-w-[200px] p-8 bg-white border border-gray-200 rounded-lg bg-[#1E4700]"
+            class="block p-8 border border-gray-200 rounded-lg bg-[#1E4700]"
           >
             <div class="flex flex-col items-center justify-center">
               <i class="fas fa-camera text-4xl text-white mb-4"></i>
@@ -672,7 +672,7 @@
           <!-- HeadPhones Category -->
           <a
             href="#"
-            class="block min-w-[200px] p-8 bg-white border border-gray-200 rounded-lg hover:border-[#1B2631] transition-colors"
+            class="block p-8 bg-white border border-gray-200 rounded-lg hover:border-[#1B2631] transition-colors"
           >
             <div class="flex flex-col items-center justify-center">
               <i class="fas fa-headphones text-4xl text-[#1B2631] mb-4"></i>
@@ -683,7 +683,7 @@
           <!-- Gaming Category -->
           <a
             href="#"
-            class="block min-w-[200px] p-8 bg-white border border-gray-200 rounded-lg hover:border-[#1B2631] transition-colors"
+            class="block p-8 bg-white border border-gray-200 rounded-lg hover:border-[#1B2631] transition-colors"
           >
             <div class="flex flex-col items-center justify-center">
               <i class="fas fa-gamepad text-4xl text-[#1B2631] mb-4"></i>
@@ -707,7 +707,7 @@
         </div>
 
         <!-- Product Grid -->
-        <div class="grid grid-cols-2 gap-4 min-w-[125%]">
+        <div class="grid grid-cols-2 gap-4 lg:grid-cols-4 lg:gap-6">
           <!-- Product Card 1 -->
           <article class="rounded-lg p-4 relative">
             <div class="bg-[#F5F5F5]">
@@ -780,6 +780,81 @@
                   <i class="far fa-star"></i>
                 </div>
                 <span class="text-gray-500">(65)</span>
+              </div>
+            </span>
+          </article>
+
+          <!-- For desktop view, add more product cards -->
+          <article class="hidden lg:block rounded-lg p-4 relative">
+            <div class="bg-[#F5F5F5]">
+              <div class="absolute top-4 right-4 flex flex-col gap-2">
+                <button class="bg-white p-2 rounded-full shadow-md">
+                  <i class="far fa-heart text-[#1B2631]"></i>
+                </button>
+                <button class="bg-white p-2 rounded-full shadow-md">
+                  <i class="far fa-eye text-[#1B2631]"></i>
+                </button>
+              </div>
+              <img
+                src="./assets/img/ips-lcd-gaming-monitor.png"
+                alt="Gaming Monitor"
+                class="w-full h-48 object-contain mb-4"
+              />
+            </div>
+            <span class="">
+              <h4 class="text-[#1B2631] text-xl font-semibold mb-2">
+                Gaming Monitor
+              </h4>
+              <div class="flex items-center gap-2 mb-2">
+                <span class="text-[#DB4444] font-semibold">$370</span>
+                <span class="text-gray-500 line-through">$400</span>
+              </div>
+              <div class="flex items-center gap-1">
+                <div class="flex text-[#FFAD33]">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <span class="text-gray-500">(99)</span>
+              </div>
+            </span>
+          </article>
+
+          <article class="hidden lg:block rounded-lg p-4 relative">
+            <div class="bg-[#F5F5F5]">
+              <div class="absolute top-4 right-4 flex flex-col gap-2">
+                <button class="bg-white p-2 rounded-full shadow-md">
+                  <i class="far fa-heart text-[#1B2631]"></i>
+                </button>
+                <button class="bg-white p-2 rounded-full shadow-md">
+                  <i class="far fa-eye text-[#1B2631]"></i>
+                </button>
+              </div>
+              <img
+                src="./assets/img/s-series-comfort-chair.png"
+                alt="Comfort Chair"
+                class="w-full h-48 object-contain mb-4"
+              />
+            </div>
+            <span class="">
+              <h4 class="text-[#1B2631] text-xl font-semibold mb-2">
+                Comfort Chair
+              </h4>
+              <div class="flex items-center gap-2 mb-2">
+                <span class="text-[#DB4444] font-semibold">$375</span>
+                <span class="text-gray-500 line-through">$400</span>
+              </div>
+              <div class="flex items-center gap-1">
+                <div class="flex text-[#FFAD33]">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <span class="text-gray-500">(105)</span>
               </div>
             </span>
           </article>
