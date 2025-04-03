@@ -11,7 +11,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
   </head>
-  <body class="bg-[#ffffff] text-white">
+  <body class="bg-[#ffffff] text-white size-full">
     <header class=" ">
       <!-- Announcement Bar -->
       <div
@@ -84,47 +84,141 @@
 
     <main class="bg-white">
       <!-- Hero Section -->
-      <section class="relative h-[14rem] overflow-hidden mt-[1rem]">
-        <!-- Slide 1 -->
-        <div class="relative h-full">
-          <div class="grid grid-cols-[45%_55%] h-full">
-            <!-- Left Content -->
-            <div class="bg-[#8DEB6E] p-5 flex flex-col justify-center">
-              <span class="flex items-center pb-4">
+      <section class="relative mt-[1rem] lg:flex lg:min-h-[30rem] mx-6">
+        <!-- Category Sidebar - Only visible on large screens -->
+        <div
+          class="hidden lg:block lg:w-1/5 lg:border-r lg:border-gray-200 lg:pr-4"
+        >
+          <ul class="space-y-4 text-gray-700 font-medium">
+            <li class="py-2">
+              <a
+                href="#"
+                class="flex items-center justify-between hover:text-[#1E4700]"
+                >Appliances</a
+              >
+            </li>
+            <li class="py-2">
+              <a
+                href="#"
+                class="flex items-center justify-between hover:text-[#1E4700]"
+                >Baby Products</a
+              >
+            </li>
+            <li class="py-2">
+              <a
+                href="#"
+                class="flex items-center justify-between hover:text-[#1E4700]"
+                >Device & Accessories
+                <i class="fas fa-chevron-right text-xs"></i
+              ></a>
+            </li>
+            <li class="py-2">
+              <a
+                href="#"
+                class="flex items-center justify-between hover:text-[#1E4700]"
+                >Groceries</a
+              >
+            </li>
+            <li class="py-2">
+              <a
+                href="#"
+                class="flex items-center justify-between hover:text-[#1E4700]"
+                >Health</a
+              >
+            </li>
+            <li class="py-2">
+              <a
+                href="#"
+                class="flex items-center justify-between hover:text-[#1E4700]"
+                >Laundry</a
+              >
+            </li>
+            <li class="py-2">
+              <a
+                href="#"
+                class="flex items-center justify-between hover:text-[#1E4700]"
+                >Men's Fashion <i class="fas fa-chevron-right text-xs"></i
+              ></a>
+            </li>
+            <li class="py-2">
+              <a
+                href="#"
+                class="flex items-center justify-between hover:text-[#1E4700]"
+                >Travel & Tours</a
+              >
+            </li>
+            <li class="py-2">
+              <a
+                href="#"
+                class="flex items-center justify-between hover:text-[#1E4700]"
+                >Uber / Bolt</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Hero Banner -->
+        <div class="h-[14rem] overflow-hidden lg:flex-1 lg:h-auto ">
+          <!-- Slide 1 -->
+          <div class="relative h-full">
+            <div class="grid grid-cols-[45%_55%] h-full lg:grid-cols-[40%_60%]">
+              <!-- Left Content -->
+              <div
+                class="bg-[#8DEB6E] p-5 flex flex-col justify-center lg:p-10"
+              >
+                <span class="flex items-center pb-4">
+                  <img
+                    src="./assets/img/apple-logo.png"
+                    alt="Apple Logo"
+                    class="w-6 h-7 mr-2"
+                  />
+                  <span class="text-sm text-black lg:text-base">
+                    iPhone 14 Series
+                  </span>
+                </span>
+                <h2
+                  class="text-2xl font-bold text-black mb-6 lg:text-4xl lg:mb-10"
+                >
+                  Up to 10%<br />
+                  off Voucher
+                </h2>
+                <a
+                  href="#"
+                  class="inline-flex items-center text-black text-base"
+                >
+                  <span class="underline"> Shop Now</span>
+                  <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+              </div>
+              <!-- Right Content -->
+              <div class="bg-black flex items-center justify-center">
                 <img
-                  src="./assets/img/apple-logo.png"
-                  alt="Apple Logo"
-                  class="w-6 h-7 mr-2"
+                  src="./assets/img/iphone-14.png"
+                  alt="iPhone 14"
+                  class="h-[80%] object-contain mb-4 lg:h-[90%]"
                 />
-                <span class="text-sm text-black"> iPhone 14 Series </span>
-              </span>
-              <h2 class="text-2xl font-bold text-black mb-6">
-                Up to 10%<br />
-                off Voucher
-              </h2>
-              <a href="#" class="inline-flex items-center text-black text-base">
-                <span class="underline"> Shop Now</span>
-                <i class="fas fa-arrow-right ml-2"></i>
-              </a>
+              </div>
             </div>
-            <!-- Right Content -->
-            <div class="bg-black flex items-center justify-center">
-              <img
-                src="./assets/img/iphone-14.png"
-                alt="iPhone 14"
-                class="h-[80%] object-contain mb-4"
-              />
+            <!-- Slide Indicators -->
+            <div
+              class="absolute bottom-4 left-[55%] transform -translate-x-1/2 flex space-x-2 lg:left-1/2 lg:bottom-6"
+            >
+              <button
+                class="w-2 h-2 rounded-full bg-white lg:w-3 lg:h-3"
+              ></button>
+              <button
+                class="w-2 h-2 rounded-full bg-white lg:w-3 lg:h-3"
+              ></button>
+              <button
+                class="w-2 h-2 rounded-full bg-white opacity-50 lg:w-3 lg:h-3"
+              ></button>
+              <button
+                class="w-2 h-2 rounded-full bg-white lg:w-3 lg:h-3"
+              ></button>
+              <button
+                class="w-2 h-2 rounded-full bg-white lg:w-3 lg:h-3"
+              ></button>
             </div>
-          </div>
-          <!-- Slide Indicators -->
-          <div
-            class="absolute bottom-4 left-[55%] transform -translate-x-1/2 flex space-x-2"
-          >
-            <button class="w-2 h-2 rounded-full bg-white"></button>
-            <button class="w-2 h-2 rounded-full bg-white"></button>
-            <button class="w-2 h-2 rounded-full bg-white opacity-50"></button>
-            <button class="w-2 h-2 rounded-full bg-white"></button>
-            <button class="w-2 h-2 rounded-full bg-white"></button>
           </div>
         </div>
       </section>
@@ -187,7 +281,7 @@
         </div>
 
         <!-- Product Grid -->
-        <div class="grid grid-cols-2 min-w-[150%] gap-1 overflow-hidden">
+        <div class="grid grid-cols-2  gap-1 overflow-hidden">
           <!-- Product Card 1 -->
           <article class="rounded-lg p-4 relative">
             <div class="bg-[#F5F5F5]">
